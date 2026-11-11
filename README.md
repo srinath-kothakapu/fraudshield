@@ -2,7 +2,6 @@
 
 ![CI](https://github.com/srinath-kothakapu/fraudshield/actions/workflows/ci.yml/badge.svg)
 ![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
 
 **FraudShield is an end-to-end, cost-sensitive fraud-detection demonstration.** It generates realistic, reproducible transaction data, trains and compares machine-learning models, calibrates fraud probabilities, chooses an operational decision threshold from an explicit cost model, explains flagged transactions, monitors changes in incoming data, and serves predictions through a REST API.
 
@@ -297,6 +296,3 @@ Do not use the generated model or example threshold to approve, block, or otherw
 - Add model versioning, shadow deployment, rollback, and operational alerting.
 - Evaluate subgroup performance, calibration, and fairness with domain and legal review.
 
-## License
-
-FraudShield is distributed under the [MIT License](LICENSE).
