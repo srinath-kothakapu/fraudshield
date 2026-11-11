@@ -1,0 +1,92 @@
+{
+  "version": "1.0.0",
+  "model": "xgboost",
+  "threshold": 0.05631068333183745,
+  "features": [
+    "amount",
+    "hour",
+    "account_age_days",
+    "is_foreign",
+    "card_present",
+    "txn_count_24h",
+    "dist_from_home_km",
+    "avg_amount_30d",
+    "device_new",
+    "amount_ratio",
+    "log_amount",
+    "is_night",
+    "new_account",
+    "foreign_cnp",
+    "velocity_high",
+    "cat_grocery",
+    "cat_restaurant",
+    "cat_travel",
+    "cat_electronics",
+    "cat_fashion",
+    "cat_gaming",
+    "cat_fuel",
+    "cat_utilities"
+  ],
+  "validation": {
+    "logreg": {
+      "roc_auc": 0.9149529429909782,
+      "pr_auc": 0.3105360182805033,
+      "precision": 0.20284697508896798,
+      "recall": 0.602112676056338,
+      "f1": 0.3034605146406389,
+      "threshold": 0.8158789112696523,
+      "alert_rate": 0.04683333333333333,
+      "cost_no_model": 28374.05,
+      "cost_with_model": 15963.269999999999,
+      "savings": 12410.78,
+      "savings_pct": 43.739896137491826,
+      "train_seconds": 0.2
+    },
+    "random_forest": {
+      "roc_auc": 0.8976854892052701,
+      "pr_auc": 0.3425257542314673,
+      "precision": 0.19732034104750304,
+      "recall": 0.5704225352112676,
+      "f1": 0.29321266968325793,
+      "threshold": 0.2412236525307893,
+      "alert_rate": 0.04561111111111111,
+      "cost_no_model": 28374.05,
+      "cost_with_model": 17282.95,
+      "savings": 11091.099999999999,
+      "savings_pct": 39.08888579529534,
+      "train_seconds": 12.1
+    },
+    "xgboost": {
+      "roc_auc": 0.8976243723347083,
+      "pr_auc": 0.3584378522641941,
+      "precision": 0.20849933598937584,
+      "recall": 0.5528169014084507,
+      "f1": 0.30279652844744454,
+      "threshold": 0.7037718940197975,
+      "alert_rate": 0.041833333333333333,
+      "cost_no_model": 28374.05,
+      "cost_with_model": 17899.52,
+      "savings": 10474.529999999999,
+      "savings_pct": 36.915879121944165,
+      "train_seconds": 1.4
+    }
+  },
+  "test": {
+    "roc_auc": 0.8892747608514481,
+    "pr_auc": 0.32447237216109803,
+    "precision": 0.225,
+    "recall": 0.5425531914893617,
+    "f1": 0.3180873180873181,
+    "threshold": 0.05631068333183745,
+    "alert_rate": 0.03777777777777778,
+    "cost_no_model": 30584.54,
+    "cost_with_model": 18283.0,
+    "savings": 12301.54,
+    "savings_pct": 40.221432135320654
+  },
+  "costs": {
+    "chargeback_fee": 15.0,
+    "review_cost": 4.0,
+    "friction_cost": 6.0
+  }
+}
